@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     // 一个 key 名称, 指定包名为前缀
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // 指定这个 Activity 的布局
         setContentView(R.layout.activity_main);
+        ImageView imageView = findViewById(R.id.imageView_avatar);
+        imageView.setImageResource(R.drawable.avatar_01);
     }
 
     public void sendMessage(View view) {
